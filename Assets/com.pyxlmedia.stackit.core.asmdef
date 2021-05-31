@@ -2,7 +2,8 @@
     "name": "com.pyxlmedia.stack-it",
     "rootNamespace": "",
     "references": [
-        "GUID:a574319cf11eb89409a04e7048affa64"
+        "GUID:a574319cf11eb89409a04e7048affa64",
+        "GUID:75469ad4d38634e559750d17036d5f7c"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

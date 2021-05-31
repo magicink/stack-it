@@ -5,7 +5,14 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "d97b8ab25a770cc9b7cf66e03fbf260b06b95f7e"
+      "hash": "436d4c85a43959ad7aaba1e1da3fb26283dd9620"
+    },
+    "com.unity.cinemachine": {
+      "version": "2.6.5",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
     },
     "com.unity.collab-proxy": {
       "version": "1.5.7",
@@ -32,17 +39,8 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.unity.ide.visualstudio": {
-      "version": "2.0.8",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.test-framework": "1.1.9"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.ide.vscode": {
-      "version": "1.2.3",
+    "com.unity.inputsystem": {
+      "version": "1.0.2",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
