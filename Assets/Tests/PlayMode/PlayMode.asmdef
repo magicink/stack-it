@@ -4,7 +4,8 @@
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
-        "com.pyxlmedia.stack-it"
+        "com.pyxlmedia.stack-it",
+        "com.pyxlmedia.states"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
