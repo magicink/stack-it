@@ -5,14 +5,17 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-public class AppManagerFactoryTests
+namespace Tests.PlayMode.Factories
 {
-    [UnityTest]
-    public IEnumerator InstanceIsAnAppManager()
+    public class AppManagerFactoryTests
     {
-        var gameObject = new GameObject();
-        gameObject.AddComponent<AppManagerFactory>();
-        Assert.That(AppManagerFactory.Instance, Is.TypeOf<AppManager>());
-        yield return null;
+        [UnityTest]
+        public IEnumerator InstanceIsAnAppManager()
+        {
+            var gameObject = new GameObject();
+            gameObject.AddComponent<AppManagerFactory>();
+            Assert.That(AppManagerFactory.Instance, Is.TypeOf<AppManager>());
+            yield return null;
+        }
     }
 }
