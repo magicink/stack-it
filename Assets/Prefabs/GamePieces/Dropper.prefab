@@ -76,7 +76,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocks:
-  - {fileID: 0}
+  - {fileID: -8858510376428028880, guid: 2e2d9b747522c8446a8b484240235de1, type: 3}
+  - {fileID: 8329991543498631811, guid: ccedeace28c5ca341bb4fa49d7987ba3, type: 3}
+  - {fileID: 5031858119428215591, guid: 814135256a6bbbf4f9240ed637d2b91d, type: 3}
   drops: 0
 --- !u!114 &-49606575189684161
 MonoBehaviour:
@@ -94,4 +96,4 @@ MonoBehaviour:
   direction: {x: -1, y: 0, z: 0}
   distance: 3
   destination: {x: 0, y: 0, z: 0}
-  threshold: 0.05
+  threshold: 0.15

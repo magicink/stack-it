@@ -7,6 +7,7 @@ using Random = UnityEngine.Random;
 
 namespace GameBoard
 {
+    [RequireComponent(typeof(Block))]
     public class DropperController : PyxlMedia.States.Controllers.StateController
     {
         [SerializeField] private List<Block> blocks = new List<Block>();
@@ -14,8 +15,18 @@ namespace GameBoard
         public static event Action NewBlock = delegate {  };
 
         public int drops;
-        
-        private Block CurrentBlock { get; set; }
+        private Block _currentBlock;
+
+        public Block CurrentBlock
+        {
+            get => _currentBlock;
+            private set
+            {
+                if (!value) return;
+                _currentBlock = value;
+                NewBlock?.Invoke();
+            }
+        }
 
         private void Awake()
         {
@@ -40,12 +51,8 @@ namespace GameBoard
             if (blocks.Count < 1) return;
             var index = Random.Range(0, blocks.Count);
             var prefab = blocks[index];
-            CurrentBlock = Instantiate(prefab, transform.position, Quaternion.identity, transform);
-            if (CurrentBlock)
-            {
-                NewBlock?.Invoke();
-                SetState(DropperStates.Active);
-            }
+            var transformProxy = transform;
+            CurrentBlock = Instantiate(prefab, transformProxy.position, Quaternion.identity, transformProxy);
         }
     }
 }

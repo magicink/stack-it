@@ -6,19 +6,25 @@ namespace GameBoard
     public class Block : StateController
     {
         private Rigidbody _rigidbody;
-        private BoxCollider _collider;
 
         private void Awake()
         {
             _rigidbody = GetComponent<Rigidbody>();
-            _collider = GetComponent<BoxCollider>();
+            if (_rigidbody)
+            {
+                _rigidbody.useGravity = false;
+                _rigidbody.isKinematic = true;
+            }
+            var rotationIndex = Random.Range(0, Rotations.Degrees.Length);
+            var rotation = Rotations.Degrees[rotationIndex];
+            transform.Rotate(0, rotation, 0);
         }
 
         public void Drop()
         {
             transform.parent = null;
-            _collider.isTrigger = false;
             _rigidbody.useGravity = true;
+            _rigidbody.isKinematic = false;
         }
     }
 }

@@ -32,7 +32,7 @@ namespace Camera
 
         private void MoveUp()
         {
-            _targetPosition = new Vector3(_currentPosition.x, _currentPosition.y + 0.25f, _currentPosition.z);
+            _targetPosition = new Vector3(_currentPosition.x, _currentPosition.y + 0.3f, _currentPosition.z);
         }
     }
 }
