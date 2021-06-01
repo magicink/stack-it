@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 83464535}
   - component: {fileID: 83464534}
   - component: {fileID: 83464533}
+  - component: {fileID: 83464537}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -239,6 +240,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &83464537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83464532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57066e794735b55428ceaea48399ce3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!1 &344897102
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,6 +492,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -49606575189684161, guid: 36a0835faee365e4dbb3ed4a2b8ce56a, type: 3}
+      propertyPath: threshold
+      value: 0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 3958241657724202244, guid: 36a0835faee365e4dbb3ed4a2b8ce56a, type: 3}
       propertyPath: m_Name
       value: Dropper
