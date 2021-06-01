@@ -1,6 +1,5 @@
-using System;
-using Managers;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace GameBoard
 {
@@ -8,7 +7,7 @@ namespace GameBoard
     {
         private void OnTriggerEnter(Collider other)
         {
-            
+            SceneManager.LoadScene("Game");
         }
     }
 }

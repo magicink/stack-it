@@ -77,6 +77,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blocks:
   - {fileID: 0}
+  drops: 0
 --- !u!114 &-49606575189684161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,8 +90,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84099e39e9ae9c340a272960e4dfe7f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.5
+  speed: 5.5
   direction: {x: -1, y: 0, z: 0}
-  distance: 4
+  distance: 3
   destination: {x: 0, y: 0, z: 0}
   threshold: 0.05
